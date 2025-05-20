@@ -5,7 +5,7 @@ use App\Http\Controllers\Coba;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend');
 });
 
 Route::get('/selamat', function () {
@@ -21,3 +21,39 @@ Route::get('blog', function () {
 });
 
 Route::get('hello', [Coba::class, 'helloworld']);
+
+Route::get('blog', function () {
+	return view('blog');
+});
+
+Route::get('/week1', function () {
+	return view('week1');
+});
+
+Route::get('/Soal 1', function () {
+	return view('Soal 1');
+});
+
+Route::get('/bootsrap1', function () {
+	return view('bootsrap1');
+});
+
+Route::get('/bootstrap2', function () {
+	return view('bootstrap2');
+});
+
+Route::get('/js1', function () {
+	return view('js1');
+});
+
+Route::get('/js2', function () {
+	return view('js2');
+});
+
+Route::get('/ntusg', function () {
+	return view('linktree-ntusg');
+});
+
+Route::get('/ets', function () {
+	return view('index');
+});

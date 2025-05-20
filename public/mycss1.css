@@ -1,0 +1,32 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightblue;
+    color: crimson;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  p {
+    text-decoration: solid;
+  }
+
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: green;
+    text-decoration: solid;
+    font-weight: bold;
+  }
+  a:visited {
+    color: black;
+  }
+
+  .kalimatpembuka {
+    font-size: xx-large;
+    border-color: green;
+    border-radius: 50px;
+    background-color: white;
+    padding-block: 50px;
+  }
