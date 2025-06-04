@@ -7,7 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 
 Route::get('/', function () {
-    return view('frontend');
+    return view('welcome');
 });
 
 Route::get('/selamat', function () {
@@ -60,6 +60,10 @@ Route::get('/ets', function () {
 	return view('ets');
 });
 
+Route::get('/frontend', function () {
+    return view('frontend');
+});
+
 Route::get('dosen', [Coba::class, 'index']);
 
 // Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
@@ -79,4 +83,9 @@ Route::post('/pegawai/store',[PegawaiDBController::class, 'store']);
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
+Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
+
+Route::get('/tes', function () {
+    return view('tes');
+});
 
