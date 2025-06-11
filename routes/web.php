@@ -7,6 +7,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SofaDBController;
 use App\Http\Controllers\KaryawanDBController;
+use App\Http\Controllers\Latihan2Controller;
+use App\Http\Controllers\Latihan3Controller;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -104,3 +107,12 @@ Route::post('/karyawan/store',[KaryawanDBController::class, 'store']);
 Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
 Route::get('/karyawan/hapus/{id}',[KaryawanDBController::class, 'hapus']);
 
+// route Latihan 2
+Route::get('/pagecounter', [Latihan2Controller::class, 'index']);
+
+// route Latihan 3
+Route::get('/keranjangbelanja', [Latihan3Controller::class,'index']);
+Route::get('/keranjangbelanja/tambah', [Latihan3Controller::class,'tambah']);
+Route::post('/keranjangbelanja/store', [Latihan3Controller::class,'store']);
+Route::post('/keranjangbelanja/update', [Latihan3Controller::class,'update']);
+Route::get('/keranjangbelanja/hapus/{id}',[Latihan3Controller::class,'hapus']);

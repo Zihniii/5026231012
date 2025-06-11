@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Zihni Aryanto Putra Buana : 5026231012</title>
+    <title>5026231012 : Zihni Aryanto Putra Buana</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -42,10 +42,10 @@
                 <a class="nav-link" href="/karyawan">Latihan 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 2</a>
+                <a class="nav-link" href="/pagecounter">Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
+                <a class="nav-link" href="/keranjangbelanja">Latihan 3</a>
             </li>
         </ul>
     </nav>
