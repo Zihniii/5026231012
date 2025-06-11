@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SofaDBController;
+use App\Http\Controllers\KaryawanDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -95,4 +96,11 @@ Route::get('/sofa/editsofa/{id}',[SofaDBController::class, 'editsofa']);
 Route::post('/sofa/updatesofa',[SofaDBController::class, 'updatesofa']);
 Route::get('/sofa/hapussofa/{id}',[SofaDBController::class, 'hapussofa']);
 Route::get('/sofa/carisofa',[SofaDBController::class, 'carisofa']);
+
+// route Karyawan
+Route::get('/karyawan', [KaryawanDBController::class, 'index']);
+Route::get('/karyawan/tambah',[KaryawanDBController::class, 'tambah']);
+Route::post('/karyawan/store',[KaryawanDBController::class, 'store']);
+Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
+Route::get('/karyawan/hapus/{id}',[KaryawanDBController::class, 'hapus']);
 
