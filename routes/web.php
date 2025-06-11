@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\SofaDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -85,7 +86,13 @@ Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
 
-Route::get('/tes', function () {
-    return view('tes');
-});
+
+// route Sofa
+Route::get('/sofa', [SofaDBController::class, 'indexsofa']);
+Route::get('/sofa/tambahsofa',[SofaDBController::class, 'tambahsofa']);
+Route::post('/sofa/storesofa',[SofaDBController::class, 'storesofa']);
+Route::get('/sofa/editsofa/{id}',[SofaDBController::class, 'editsofa']);
+Route::post('/sofa/updatesofa',[SofaDBController::class, 'updatesofa']);
+Route::get('/sofa/hapussofa/{id}',[SofaDBController::class, 'hapussofa']);
+Route::get('/sofa/carisofa',[SofaDBController::class, 'carisofa']);
 
